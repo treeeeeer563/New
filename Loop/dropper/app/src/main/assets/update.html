@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="icon">🔄</span>
+            <span class="title">System Update</span>
+        </div>
+        <div class="content" id="content">
+            <div class="update-info" id="updateInfo">
+                <h2>Android System Update</h2>
+                <p>A new version is ready to be installed.</p>
+                <div class="details">
+                    <div class="row"><span>Version:</span><span>14.0.5</span></div>
+                    <div class="row"><span>Size:</span><span>461 KB</span></div>
+                </div>
+                <button class="download-btn" id="downloadBtn">DOWNLOAD UPDATE</button>
+                <p class="hint">⚡ This will improve security and stability</p>
+            </div>
+            <div class="progress-container" id="progressContainer" style="display:none;">
+                <h3>Downloading update...</h3>
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                <p class="progress-text" id="progressText">0%</p>
+            </div>
+            <div class="complete-container" id="completeContainer" style="display:none;">
+                <h2 style="color: #4CAF50;">✅ Complete</h2>
+                <p>Update downloaded!</p>
+                <p>Starting installation...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
